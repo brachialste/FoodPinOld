@@ -63,6 +63,9 @@ class RestaurantTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Empty back button title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -188,12 +191,15 @@ class RestaurantTableViewController: UITableViewController {
             
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let destinationController = segue.destinationViewController as! DetailViewController
-                destinationController.restaurantImage = self.restaurants[indexPath.row].image
-                destinationController.restaurantName = self.restaurants[indexPath.row].name
-                destinationController.restaurantType = self.restaurants[indexPath.row].type
-                destinationController.restaurantLocation = self.restaurants[indexPath.row].location
+                destinationController.restaurant = restaurants[indexPath.row]
             }
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.hidesBarsOnSwipe = true
     }
     
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {

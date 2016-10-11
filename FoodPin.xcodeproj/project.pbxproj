@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A11B4BA1DAC185900B1A393 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A11B4B91DAC185900B1A393 /* DetailTableViewCell.swift */; };
 		5A774A201C4962C400D04F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A774A1F1C4962C400D04F2C /* AppDelegate.swift */; };
 		5A774A251C4962C400D04F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A774A231C4962C400D04F2C /* Main.storyboard */; };
 		5A774A271C4962C400D04F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A774A261C4962C400D04F2C /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A11B4B91DAC185900B1A393 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		5A774A1C1C4962C400D04F2C /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A774A1F1C4962C400D04F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A774A241C4962C400D04F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				5A774A4F1C49732700D04F2C /* CustomTableViewCell.swift */,
 				5ACB40EE1DA4563500BB8448 /* DetailViewController.swift */,
 				5AA8B9421DA569DF002DB7B4 /* Restaurant.swift */,
+				5A11B4B91DAC185900B1A393 /* DetailTableViewCell.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A11B4BA1DAC185900B1A393 /* DetailTableViewCell.swift in Sources */,
 				5AA8B9431DA569DF002DB7B4 /* Restaurant.swift in Sources */,
 				5A774A501C49732700D04F2C /* CustomTableViewCell.swift in Sources */,
 				5A774A4E1C4969E300D04F2C /* RestaurantTableViewController.swift in Sources */,
